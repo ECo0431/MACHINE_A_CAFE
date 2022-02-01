@@ -3,27 +3,6 @@ let PIECEINSERER = 0;
 let PiecesTotalInserer = PIECEINSERER;
 let PrixRestantAPayer = PRIXCAFE - PiecesTotalInserer;
 let Remboursement = 0;
-
-function round(num) {
-  var m = Number((Math.abs(num) * 100).toPrecision(15));
-  return (Math.round(m) / 100) * Math.sign(num);
-}
-
-// console.log("prix inserer " + PIECEINSERER);
-// console.log("prix total inserer " + PiecesTotalInserer);
-// console.log("prix restant à payer " + round(PrixRestantAPayer));
-
-// PIECEINSERER = 0;
-// PIECEINSERER = 1;
-// PiecesTotalInserer += PIECEINSERER;
-// PrixRestantAPayer = PRIXCAFE - PiecesTotalInserer;
-
-// if (PRIXCAFE > PiecesTotalInserer) {
-//   console.log("Merci de rajouter des pièces");
-// } else {
-//   console.log("Voila votre café");
-// }
-
 const DEUXEUROS = document.querySelector("#DEUXEUROS");
 const UNEUROS = document.querySelector("#UNEUROS");
 const CINQUANTECENTIMES = document.querySelector("#CINQUANTECENTIMES");
@@ -33,8 +12,12 @@ const CINQUECENTIMES = document.querySelector("#CINQUECENTIMES");
 const DEUXCENTIMES = document.querySelector("#DEUXCENTIMES");
 const UNCENTIME = document.querySelector("#UNCENTIME");
 const TXTECRAN = document.querySelector(".txt-ecran");
+const CAFE = document.querySelector(".cafe");
 
-console.log(TXTECRAN);
+function round(num) {
+  var m = Number((Math.abs(num) * 100).toPrecision(15));
+  return (Math.round(m) / 100) * Math.sign(num);
+}
 
 function test() {
   console.log("pièce inserer " + PIECEINSERER);
@@ -50,6 +33,7 @@ function resultat() {
       PrixRestantAPayer - PrixRestantAPayer - PrixRestantAPayer;
     TXTECRAN.innerHTML -= `<p>Remboursement ${round(PrixRestantAPayer)} €</p>`;
     TXTECRAN.innerHTML += `<p>Remboursement ${round(PrixRestantAPayer)} €</p>`;
+    CAFE.classList.remove("none");
   }
 }
 

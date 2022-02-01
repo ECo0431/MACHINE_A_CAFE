@@ -155,3 +155,17 @@ p {
   position: relative;
   left: -99999px;
 }
+
+.cafe {
+  background-color: white;
+  position: relative;
+  bottom: -44px;
+  left: 200px;
+  height: 60px;
+  width: 50px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.none {
+  display: none;
+}
