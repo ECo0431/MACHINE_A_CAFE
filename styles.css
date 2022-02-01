@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-pieces {
+  position: fixed;
+  bottom: 20px;
+  z-index: 2;
+}
+
+.pieces {
+  cursor: pointer;
+}
+
+.pieces:hover {
+  top: -20px;
+  position: relative;
+}
+
+.machine-a-cafe {
+  background-color: #4e2a0a;
+  height: 1000px;
+  width: 700px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5em;
+  color: white;
+}
+
+p,
+h2 {
+  color: greenyellow;
+  font-size: 1.3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.panneau {
+  background-color: #fbb016;
+  height: 292px;
+  width: 456px;
+  position: relative;
+  top: 20px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.corp-machine {
+  background-color: #bdbec0;
+  height: 471px;
+  width: 456px;
+  position: relative;
+  top: 20px;
+  left: 40px;
+}
+
+.ecran {
+  background-color: black;
+  height: 183px;
+  width: 293px;
+  position: relative;
+  top: 20px;
+  left: 67px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-cafe {
+  background-color: #3c3837;
+  height: 147px;
+  width: 293px;
+  position: relative;
+  top: 47px;
+  left: 67px;
+}
+
+.sortie-cafe-1 {
+  background-color: #bdbec0;
+  height: 20px;
+  width: 10px;
+  position: relative;
+  top: 0px;
+  left: 67px;
+}
+
+.sortie-cafe-2 {
+  background-color: #bdbec0;
+  height: 20px;
+  width: 10px;
+  position: relative;
+  top: -22px;
+  left: 210px;
+}
+
+.box-inserer-pieces {
+  background-color: #d1d2d4;
+  height: 400px;
+  width: 100px;
+  position: relative;
+  top: -500px;
+  left: 550px;
+}
+
+.inserer-pieces {
+  background-color: #343331;
+  height: 40px;
+  width: 5px;
+  position: relative;
+  top: 50px;
+  left: 45px;
+}
+
+.sortie-pieces {
+  background-color: #59595b;
+  height: 80px;
+  width: 85px;
+  position: relative;
+  top: 270px;
+  left: 7px;
+}
+
+.test {
+  opacity: 0.5;
+  width: 700px;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+}
+
+.img-cafe {
+  width: 100px;
+  margin-top: 50px;
+}
+
+p {
+  position: relative;
+  left: 99999px;
+}
+
+.txt-ecran {
+  position: relative;
+  left: -99999px;
+}
